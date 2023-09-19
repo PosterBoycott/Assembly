@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(7, 7, 22);
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    background-color: rgb(6, 6, 94);
+    margin-bottom: 5px;
+}
+.nav-bar .item{
+    margin-left: 40px;
+    color: white;
+}
+
+.game-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+}
+
+.game-board .black-block{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 68px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid;
+    border-color: black;
+}
+.game-board .white-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-color: black;
+}
+
+#ide {
+    background-color: green;
+}
+
+.invisible{
+    position: absolute;
+    opacity: 0.5;
+}
+
+.game-board .white-block.active{
+    background-color: green;
+}
+.game-board .black-block.active{
+    background-color: green;
+}
+
+.white-pawn{
+    height: 40px;
+    width: 20px;
+    background-color: rgb(151, 148, 148);
+
+}
+
+.black-pawn{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    z-index: 2;
+    height: 40px;
+    width: 20px;
+    background-color: rgb(59, 56, 56);
+}
+
+.bishop{
+    scale: 3;
+    color: rgb(100, 100, 100);
+}
