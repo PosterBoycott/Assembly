@@ -56,7 +56,10 @@ function alles(item){
     blockClick(item)
 }
 
-
+//selected sqaure
+//piece on sqaure
+//invisble store selected piece
+//
 
 
 
